@@ -1,0 +1,229 @@
+body {
+    background-image: url(assets/wallpaper/wallpaper-dashboard.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: 0;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-item {
+        border-bottom: 2px solid #fff;
+    }
+    .navbar {
+        min-height: 100px;
+    }
+    .judul-about-1 {
+        font-size: 40px;
+        width: 230px;
+    }
+    .logo-navbar img{
+        max-width: 100px;
+    }
+}
+
+.margin-all {
+    margin: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.red-nav {
+    background-color: #D63A3A;
+}
+
+.logo-navbar {
+    position: fixed;
+    z-index: 88;    
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 80;
+    width: 100%;
+}
+
+.navbar-nav li.nav-item.active {
+    border-bottom: solid 4px #fff;
+}
+
+.nav-item {
+    min-width: 80px;
+    text-align: center;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bg-home {
+    position: fixed;
+    z-index: 80;
+    width: 100%;
+}
+
+.padding-bawah {
+    padding-bottom: 30px;
+}
+
+.padding-bawah1 {
+    padding-bottom: 12px;
+}
+
+.padding-atas1 {
+    padding-top: 12px;
+}
+
+.item-about {
+    padding: 10px;
+}
+
+.judul-about-1 {
+    border-bottom: 4px solid #000;
+    width: 230px;
+}
+
+.background-content {
+    color: #000000;
+    width: 100%;
+    margin: 50px auto;
+    margin-top: 60px;
+    background-color: #FFED9E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.about {
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+}
+
+.isi-about {
+    padding: 20px;
+}
+
+.item-about {
+    max-width: 220px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 4em;
+}
+
+.btn-selengkapnya {
+    background-color: #D63A3A;
+    color: #ffffff;
+    border: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 200px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.menu-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-dashboard-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-dashboard-content {
+    width: 70%;
+    /* margin: 50px auto;
+    margin-top: 60px; */
+    background-color: #D63A3A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.menu-dashboard-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-dashboard-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-dashboard-1 img {
+    max-width: 90%;
+}
+
+.isi-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn-selengkapnya-menu {
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 200px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.footer {
+    background-color: #ED1B24;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

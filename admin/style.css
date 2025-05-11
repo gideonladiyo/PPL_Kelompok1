@@ -1,0 +1,15 @@
+.bg-biru {
+    background-color: #40A2E3;
+}
+
+.bg-hijo {
+    background-color: #0D9276;
+}
+
+.gambar-berita img {
+    width: 100%;
+}
+
+.isi-berita {
+    max-width: 50%;
+}

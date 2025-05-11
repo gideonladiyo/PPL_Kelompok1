@@ -1,0 +1,172 @@
+body {
+    background-image: url(assets/wallpaper/wallpaper-dashboard.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    flex: 1;
+    width: 60%;
+    margin: 110px auto 20px auto;
+    /* Adds top margin to avoid overlapping with header */
+    padding: 30px;
+    background-color: #FFF176;
+    /* Sama dengan warna container lainnya */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-item {
+        border-bottom: 2px solid #fff;
+    }
+
+    .navbar {
+        min-height: 100px;
+    }
+
+    .judul-about-1 {
+        font-size: 40px;
+        width: 230px;
+    }
+
+    .logo-navbar img {
+        max-width: 100px;
+    }
+}
+
+.margin-all {
+    margin: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.red-nav {
+    background-color: #D63A3A;
+}
+
+.logo-navbar {
+    position: fixed;
+    z-index: 88;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 80;
+    width: 100%;
+    top: 0;
+    /* Ensures the navbar stays at the top */
+}
+
+.navbar-nav li.nav-item.active {
+    border-bottom: solid 2px #fff;
+}
+
+.nav-item {
+    min-width: 80px;
+    text-align: center;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container.index {
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+}
+
+/* CSS Get_review */
+.container.get_review {
+    flex: 1;
+    width: 65%;
+    margin: 120px auto 20px auto;
+    /* Adds top margin to avoid overlapping with header */
+    padding: 25px;
+    background-color: #FFF176;
+    /* Sama dengan warna container lainnya */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.review {
+    border-bottom: 1px solid #000000;
+    padding: 10px 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info {
+    font-size: 14px;
+}
+
+.profile-info .name {
+    font-weight: bold;
+}
+
+.message {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.btn-edit {
+    padding: 4px 15px;
+    color: #000000;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: #e10000;
+    color: #090909;
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.container.edit_review {
+    flex: 1;
+    width: 50%;
+    margin: 130px auto 35px auto;
+    /* Adds top margin to avoid overlapping with header */
+    padding: 30px;
+    background-color: #FFF176;
+    /* Sama dengan warna container lainnya */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
