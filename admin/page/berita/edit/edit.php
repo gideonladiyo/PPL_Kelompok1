@@ -40,7 +40,7 @@ function uploadImage($conn) {
                     echo "<br><img src='$targetFile' alt='Uploaded Image'>";
                     // Update data ke database
                     $filename = basename($_FILES["file"]["name"]);
-                    $sql = "UPDATE menu SET judul = '$judul', konten = '$konten', tanggal = '$tanggal', gambar = '$filename' WHERE id_berita = $id";
+                    $sql = "UPDATE berita SET judul = '$judul', konten = '$konten', tanggal = '$tanggal', gambar = '$filename' WHERE id_berita = $id";
                     if ($conn->query($sql) === TRUE) {
                         echo "Record updated successfully";
                         header("location:page.php?mod=menu");

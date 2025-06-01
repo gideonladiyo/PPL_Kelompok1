@@ -9,12 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tentang = $_POST['tentang'];
     $pesan = $_POST['pesan'];
 
-    // Simpan data ke database
     $sql = "INSERT INTO reviews (user_id, tentang, pesan) VALUES ('$user_id', '$tentang', '$pesan')";
     if ($conn->query($sql) === TRUE) {
         header('Location: page.php?mod=get_review');
         exit();
     } else {
+        // Kode akan ke branch sini
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 }
@@ -30,8 +30,8 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete' && isset($_GET['id'])) 
     $id = $_GET['id'];
     $sql = "DELETE FROM reviews WHERE id=$id";
     if ($conn->query($sql) === TRUE) {
-        // Redirect kembali ke halaman utama setelah berhasil menghapus
-        header("Location: {$_SERVER['PHP_SELF']}");
+        // Jalur kode akan ke branch sini
+        header("Location: {$_SERVER['PHP_SELF']}"); 
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../../config/koneksi.php';
+include '../../../config/connect.php';
 
 if (isset($_POST['email'], $_POST['nama'], $_POST['no_hp'], $_POST['password'])) {
 

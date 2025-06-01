@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['user_id'])) {
+    echo "<script>alert('Session user_id tidak ada!'); window.location.href = '../index.php';</script>";
+    exit();
+}
 include '../config/connect.php';
 $user_id = $_SESSION['user_id'];
 // mendapatkan data role untuk user yang sedang login
@@ -8,8 +12,9 @@ $datas = $conn->query($query);
 $data = $datas->fetch_assoc();
 // jika nama role bukan admin atau bukan penjual maka di alihkan ke ../index.php
 if ($data['name'] != 'admin' && $data['name'] != 'penjual') {
-header("Location: ../index.php");
-exit();
+    echo "<script>alert('Akses ditolak. Role Anda: " . $data['name'] . "'); window.location.href = '../index.php';</script>";
+    // header("Location: ../index.php");
+    exit();
 }
 
 $mod = isset($_GET['mod']) ? $_GET['mod'] : '';
